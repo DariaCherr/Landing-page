@@ -1,0 +1,85 @@
+.content-elem {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    position: relative;
+    top: -300px;
+    &__element {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 200px;
+        }
+    }
+    &__box {
+        margin-left: 150px;
+    }
+    &__photo {
+        max-width: 600px;
+    }
+    &__title {
+        margin: 27px 0;
+        position: relative;
+        font-family: 'Playfair Display';
+        font-size: 3rem;
+        &--first::before {
+            content: "01";
+            display: block;
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            font-size: 12rem;
+            opacity: 10%;
+            top: -170px;
+            left: -150px;
+            font-family: 'Kanit';
+            font-weight: 600;
+        }
+        &--second::before {
+            content: "02";
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            font-size: 12rem;
+            opacity: 10%;
+            top: -180px;
+            left: -150px;
+            font-family: 'Kanit';
+            font-weight: 600;
+        }
+        &--third::before {
+            content: "03";
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            font-size: 12rem;
+            opacity: 10%;
+            top: -185px;
+            left: -150px;
+            font-family: 'Kanit';
+            font-weight: 600;
+        }
+    }
+    &__text {
+        margin: 0 127px 27px 0;
+        &--shift {
+            margin: 0 0 27px 0;
+        }
+    }
+    .content-shift {
+        margin-left: 264px;
+    }
+    &__arrow {
+        display: flex;
+        color: var(--color1);
+        align-items: baseline;
+        &:last-child:after {
+            content: "";
+            display: block;
+            background-image: url(../icons/arrow2.svg);
+            width: 26px;
+            height: 15px;
+            background-repeat: no-repeat;
+            margin-left: 16px;
+        }
+    }
+}

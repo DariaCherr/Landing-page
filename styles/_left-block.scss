@@ -1,0 +1,11 @@
+.left-block {
+    display: flex;
+    flex-direction: column;
+    &__text {
+        margin: 24px 0 122px;
+    }
+    &__rights {
+        opacity: 50%;
+        font-size: 0.9rem;
+    }
+}
