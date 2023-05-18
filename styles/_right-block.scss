@@ -16,3 +16,13 @@
         font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width: 1430px) {
+    .right-block {
+        &__column {
+            &:first-child {
+                margin-right: 100px;
+            }
+        }
+    }
+}

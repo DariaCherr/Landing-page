@@ -1,10 +1,11 @@
 .banner {
     padding: 0 0 1200px 0;
     position: relative;
+    max-width: 1924px;
     &__center {
         text-align: left;
         max-width: 1000px;
-        margin: 198px auto 35px;
+        margin: 0 auto;
     }
     &__title {
         font-size: 4.5rem;

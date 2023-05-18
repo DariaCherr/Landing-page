@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     margin-top: 170px;
+    left: -250px;
     &__follow {
         margin: 0 24px 0 0;
     }
@@ -30,5 +31,11 @@
             height: 22px;
             background-repeat: no-repeat;
         }
+    }
+}
+
+@media screen and (max-width: 1386px) {
+    .social {
+        left: -150px;
     }
 }
